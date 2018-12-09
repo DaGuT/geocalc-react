@@ -1,0 +1,15 @@
+body {
+  min-width:270px;
+}
+
+#root {
+  background:white;
+}
+
+.extraHigh {
+  height: 10000px;
+}
+
+.top {
+  z-index: 999;
+}

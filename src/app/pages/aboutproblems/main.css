@@ -1,0 +1,32 @@
+.centerimg {
+  display: block;
+margin: 0 auto;
+margin: 10px auto 10px;
+}
+.collapser {
+  margin-bottom:-10px;
+}
+.collapsable {
+  border:1px solid #000;
+  border-radius: 15px;
+  padding:10px;
+}
+
+.aboutproblems .opened{
+  border: 1px solid #000;
+margin-bottom:-2px;
+border-radius: 15px 15px 0px 0px;
+border-bottom: 1px solid #fff !important;
+}
+
+.aboutproblems.centered {
+  position:relative;
+  top:30vh;
+  transition: all 0.4s linear;
+}
+
+.aboutproblems {
+  position:relative;
+  top:0vh;
+  transition: all 0.4s linear;
+}

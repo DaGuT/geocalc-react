@@ -1,0 +1,130 @@
+.sidebar {
+  background: white;
+  border-right: 1px solid #47a3da;
+}
+
+.sidebar.pc {
+  left:0px;
+}
+
+.sidebar ul li:nth-child(2),.sidebar li:nth-child(2) {
+  margin-top:84px;
+}
+
+/* The navigation menu links */
+
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #47a3da;
+  display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+
+.sidebar a:hover {
+  color: #000;
+}
+
+.slideout-menu, .sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: 2;
+  width: 256px;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+.slideout-menu {
+    display: none;
+}
+
+.slideout-menu-left {
+  left: 0;
+}
+
+.slideout-menu-right {
+  right: 0;
+}
+
+.brand {
+  background: white;
+  text-align:left;
+  list-style: none;
+  position:fixed;
+  left:0px;
+  right:0px;
+  height:84px;
+  box-shadow: 0 7px 4px #becbd2;
+}
+
+.brand a {
+  color: #47a3da !important;
+  font-weight: 800;
+  font-size:3em;
+}
+
+.slideout-panel {
+  position: relative;
+  z-index: 1;
+}
+
+.slideout-open, .slideout-open body, .slideout-open .slideout-panel {
+  overflow: hidden;
+}
+
+.slideout-open .slideout-menu {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .slideout-panel {
+    margin-left: 0px;
+  }
+  .sidebar.pc {
+    overflow-y: hidden;
+  }
+  body {
+    margin-left: 256px !important;
+    margin-top:100px !important;
+  }
+  .slideout-menu-left {
+    display: none;
+    left: -500px;
+  }
+  .slideout-menu-right {
+    display: none;
+    right: -500px;
+  }
+}
+
+.mobile-fixed {
+  position: fixed;
+  height: 40px;
+  top:0;
+  background: #111;
+  width: 100%;
+  display: none;
+}
+
+.navbar-toggler {
+  color:#818181;
+}
+
+@media (max-width:767px) {
+  .slideout-panel {
+    z-index: 2;
+  }
+  .mobile-fixed {
+    display: block;
+    z-index:999;
+  }
+  #root {
+    margin-top:40px;
+  }
+  .sidebar.pc {
+    display:none;
+  }
+}

@@ -1,0 +1,14 @@
+.answer {
+  border:1px solid #000;
+  border-radius:10px;
+  padding:20px;
+}
+
+.vline {
+  border-right:1px solid black;
+  height:100%;
+}
+
+.v-middle {
+  vertical-align: middle;
+}
